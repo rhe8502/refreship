@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from urllib import request
 from time import sleep, ctime
 import requests
 import signal
