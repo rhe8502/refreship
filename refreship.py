@@ -32,10 +32,10 @@ def sig_hand(sig, frame):
 
 def main():
     signal.signal(signal.SIGINT, sig_hand)
+    
     for x in range (max_request):
         status, ext_ip = get_ip()
         if (status == 200):
-            #print(ctime())
             print(f'{ctime()} - Request successful! - Your external IP: {ext_ip}')
             break
         else:
