@@ -48,11 +48,11 @@ Run every 15 minutes via a CRON job and log status and error messages separately
 **Directnic - Add a Dynamic A Record**  
 ![Dynamic A Record](./res/dns-settings.png)
 
-**Directnic - URL to update IP address**  
-![IP Address Entry](./res/dyn-ip-url.png)
-
 **Directnic - DNS Entry**  
 ![DNS Entry](./res/a-record.png)
+
+**Directnic - URL to update IP address**  
+![IP Address Entry](./res/dyn-ip-url.png)
 
 ### **References**
 
