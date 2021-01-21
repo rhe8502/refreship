@@ -6,14 +6,16 @@ import requests
 import signal
 import sys
 
-url='http://myexternalip.com/raw' # URL to retrieve external IP
+url='http://myexternalip.com/raw' # URL to retrieve external IP Address
 
-max_request = 3 # Maximum number of requests
-wait_time = 5 # Time between requests in seconds
+max_request = 3 # Maximum number of requests (Default value: 3)
+wait_time = 5 # Wait time between requests in seconds (Default value: 5)
 
 # Base URL provided by Directnic (Do not share this link, using this link will change the IP address tied to this domain)
+# Replace “RANDOMNUMBERSANDLETTERS” with your unique identifier
 dnic_base_url ='https://directnic.com/dns/gateway/RANDOMNUMBERSANDLETTERS/?data='
 
+# Retrieve external IP Address
 def get_ip():
     try:
         response = requests.get(url)
