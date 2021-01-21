@@ -29,16 +29,16 @@ Directnic recently started supporting "A Records" for dynamic IP addresses. This
 
 ## **Usage Examples**
 
-### **Command-Line**  
+### **Command-Line**
+
 `$./refreship.py`
 
 **Output**  
-`Thu Jan 21 07:15:02 2021 - Request successful! - Your external IP: 203.0.113.7`  
-`Thu Jan 21 07:15:03 2021 - Request successful! - Your DNS record was updated to 203.0.113.7`  
 `Thu Jan 21 07:30:02 2021 - Request successful! - Your external IP: 203.0.113.22`  
 `Thu Jan 21 07:30:04 2021 - Request successful! - Your DNS record was updated to 203.0.113.22`  
 
-### **Scheduled run (recommended option)**  
+### **Scheduled run (recommended option)**
+
 Run every 15 minutes via a CRON job and log status and error messages separately to **/var/log/refreship.log** and **/var/log/refreship_error.log**.
 
 `*/15 * * * * /usr/local/bin/refreship.py >>/var/log/refreship.log 2>>/var/log/refreship_error.log`
